@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lifeline — the internship operating system</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 16h6l3-8 6 16 3-8h10' fill='none' stroke='%2322d3ee' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" width="30" height="30"><path d="M2 16h6l3-8 6 16 3-8h10" fill="none" stroke="url(#lg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs></svg>
+      <div>
+        <div class="brand-name">Lifeline</div>
+        <div class="brand-sub">internship OS</div>
+      </div>
+    </div>
+    <nav id="nav">
+      <a href="#/dashboard" data-route="dashboard"><span class="ni">◈</span>Mission Control</a>
+      <a href="#/radar" data-route="radar"><span class="ni">📡</span>Radar<span class="badge" id="b-radar"></span></a>
+      <a href="#/applications" data-route="applications"><span class="ni">🚀</span>Applications<span class="badge" id="b-apps"></span></a>
+      <a href="#/resume" data-route="resume"><span class="ni">📄</span>Resume Vault</a>
+      <a href="#/referrals" data-route="referrals"><span class="ni">🤝</span>Referral Engine</a>
+      <a href="#/prep" data-route="prep"><span class="ni">🎤</span>Interview Prep</a>
+      <a href="#/tracker" data-route="tracker"><span class="ni">🗓</span>Tracker</a>
+      <a href="#/settings" data-route="settings"><span class="ni">⚙</span>Settings</a>
+    </nav>
+    <div class="side-foot">
+      <div class="side-foot-line" id="ready-mini">readiness —</div>
+      <div class="side-foot-sub">free forever · your data stays with you</div>
+    </div>
+  </aside>
+  <main id="main">
+    <div id="view"></div>
+  </main>
+</div>
+<div id="modal-root"></div>
+<div id="toast-root"></div>
+<script src="static/seed.js"></script>
+<script src="static/localapi.js"></script>
+<script src="static/app.js"></script>
+</body>
+</html>
